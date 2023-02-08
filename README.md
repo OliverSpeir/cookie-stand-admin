@@ -1,6 +1,6 @@
-# LAB - 34
+# LAB - 37
 
-## Project: DRF API / Frontend Template
+## Project: Cookie Stand Admin Page
 
 ### Author: Oliver Speir
 
