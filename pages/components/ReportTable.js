@@ -41,7 +41,6 @@ export default function ReportTable({ stands }) {
                 <td className="pl-2 border border-gray-700">{totals}</td>
             </tbody>
         </table>
-
     );
 }
 
