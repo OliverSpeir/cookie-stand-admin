@@ -20,7 +20,7 @@ export default function ReportTable({ stands }) {
                         const standTotal = item.hourlySales.reduce((sum, sale) => sum + sale, 0)
                         totals += standTotal
                         return (
-                            <tr key={idx}>
+                            <tr key={idx} className="even:bg-emerald-100 odd:bg-emerald-300">
                                 <td className="pl-2 border border-gray-700">{item.standName}</td>
                                 {item.hourlySales.map((item) => (<td className="pl-2 border border-gray-700">{item}</td>))}
                                 <td className="pl-2 border border-gray-700">{standTotal}</td>
