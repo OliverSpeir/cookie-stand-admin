@@ -10,7 +10,7 @@ import { useAuth } from '../contexts/auth';
 import LoginForm from "./components/LoginForm";
 
 export default function Home() {
-  const [stands, setStands] = useState([]);
+  // const [stands, setStands] = useState([]);
   const { user, login } = useAuth();
 
   // function newStandHandler(event) {

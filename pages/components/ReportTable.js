@@ -15,16 +15,16 @@ export default function ReportTable({ stands }) {
       </thead>
       <tbody>
         {stands.map((item, idx) => {
-          const standTotal = item.hourlySales.reduce(
+          const standTotal = item.hourly_sales.reduce(
             (sum, sale) => sum + sale,
             0
           );
           totals += standTotal;
           return (
             <tr key={idx} className="even:bg-emerald-100 odd:bg-emerald-300">
-              <td className="pl-2 border border-gray-700">{item.standName}</td>
-              {item.hourlySales.map((item) => (
-                <td key={idx * 100} className="pl-2 border border-gray-700">
+              <td className="pl-2 border border-gray-700">{item.location}</td>
+              {item.hourly_sales.map((item) => (
+                <td key={Math.random()} className="pl-2 border border-gray-700">
                   {item}
                 </td>
               ))}
@@ -37,7 +37,7 @@ export default function ReportTable({ stands }) {
           return (
             <>
               <td className="pl-2 border border-gray-700">
-                {stands.reduce((sum, sale) => sum + sale.hourlySales[idx], 0)}
+                {stands.reduce((sum, sale) => sum + sale.hourly_sales[idx], 0)}
               </td>
             </>
           );

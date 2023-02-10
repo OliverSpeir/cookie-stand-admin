@@ -19,7 +19,7 @@ export default function CookieStandAdmin() {
         )} */}
             </main>
             <footer>
-            <Footer locations={stands.length} />
+            <Footer locations={resources} />
             </footer>
         </>
     );
