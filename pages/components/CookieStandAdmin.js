@@ -8,19 +8,10 @@ export default function CookieStandAdmin() {
     const { resources, deleteResource } = useResource();
 
     return (
-        <>  <main>
+    <>
             <CookieStandForm />
             <CookieStandTable stands={resources || []} deleteStand={deleteResource} />
-            {/* <CreateForm newStandHandler={newStandHandler} />
-        {stands.length > 0 ? (
-          <ReportTable stands={stands} />
-        ) : (
-          <h1>report coming soon</h1>
-        )} */}
-            </main>
-            <footer>
-            <Footer locations={resources} />
-            </footer>
-        </>
+            <Footer locations={resources || []} />
+   </>
     );
 }

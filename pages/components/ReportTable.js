@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { hours } from "./data.js";
-export default function ReportTable({ stands }) {
+import TableRow from './TableRow';
+export default function ReportTable({ stands, deleteStand }) {
   let totals = 0;
   return (
     <table className="w-1/2 mx-auto my-4">
@@ -14,17 +15,20 @@ export default function ReportTable({ stands }) {
         </tr>
       </thead>
       <tbody>
-        {stands.map((item, idx) => {
+      {stands.map(stand => (
+                    <TableRow key={stand.id} info={stand} deleteStand={deleteStand} />
+                ))}
+        {/* {stands.map((item, idx) => {
           const standTotal = item.hourly_sales.reduce(
             (sum, sale) => sum + sale,
             0
           );
           totals += standTotal;
           return (
-            <tr key={idx} className="even:bg-emerald-100 odd:bg-emerald-300">
+            <tr key={item.name} className="even:bg-emerald-100 odd:bg-emerald-300">
               <td className="pl-2 border border-gray-700">{item.location}</td>
-              {item.hourly_sales.map((item) => (
-                <td key={Math.random()} className="pl-2 border border-gray-700">
+              {item.hourly_sales.map((item, idx) => (
+                <td key={idx} className="pl-2 border border-gray-700">
                   {item}
                 </td>
               ))}
@@ -42,7 +46,7 @@ export default function ReportTable({ stands }) {
             </>
           );
         })}
-        <td className="pl-2 border border-gray-700">{totals}</td>
+        <td className="pl-2 border border-gray-700">{totals}</td> */}
       </tbody>
     </table>
   );
