@@ -23,22 +23,22 @@ export default function CreateForm() {
     >
       <h2 className="text-center">Create Cookie Stand</h2>
       <div className="container flex justify-between">
-        <label className="mr-4" for="location">
+        <label className="mr-4" htmlFor="location">
           Location:
         </label>
         <input className="w-full rounded-lg mb-4" placeholder='location' name='location' />
       </div>
       <div className="flex items-center justify-between m-1">
         <div className="flex flex-col items-center m-1">
-          <label for="field1">Minimum Customers per Hour</label>
+          <label htmlFor="field1">Minimum Customers per Hour</label>
           <input className="w-full" placeholder='minimum' name='minimum' />
         </div>
         <div className="flex flex-col items-center m-1">
-          <label for="field2">Maximum Customers per Hour</label>
+          <label htmlFor="field2">Maximum Customers per Hour</label>
           <input className="w-full" placeholder='maximum' name='maximum' />
         </div>
         <div className="flex flex-col items-center m-1">
-          <label for="field3">Average Cookies per Sale</label>
+          <label htmlFor="field3">Average Cookies per Sale</label>
           <input className="w-full" placeholder='average' name='average' />
         </div>
 

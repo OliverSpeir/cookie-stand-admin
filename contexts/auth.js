@@ -36,7 +36,7 @@ export function AuthProvider(props) {
         {console.log(info)}
 
         const data = await response.json();
-
+        {console.log(data)}
         const decodedAccess = jwt.decode(data.access);
 
         const newState = {

@@ -10,7 +10,8 @@ import { useAuth } from '../contexts/auth';
 import LoginForm from "./components/LoginForm";
 
 export default function Home() {
-  const { user, login } = useAuth();
+  const { user, login, logout } = useAuth();
+  console.log(user)
 
 
   return (
@@ -21,7 +22,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      {console.log(user)}
+      <Header user={user} logout={logout}/>
       {user ? <CookieStandAdmin /> : <LoginForm onLogin={login} />}
     </>
   );
