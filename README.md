@@ -9,6 +9,8 @@
 - Cookie Stand Admin Page
     - built from create-next-app --javascript
     - styled with tailwindCSS
+    - connected to django api
+    - uses jwt
 
 ### Setup
 
