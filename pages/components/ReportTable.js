@@ -1,4 +1,4 @@
-import TableRow from './TableRow';
+import TableRow from './TableRow.js';
 
 export default function ReportTable({ stands, deleteStand }) {
   let totals = 0;
