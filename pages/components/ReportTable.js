@@ -18,35 +18,6 @@ export default function ReportTable({ stands, deleteStand }) {
       {stands.map(stand => (
                     <TableRow key={stand.id} info={stand} deleteStand={deleteStand} />
                 ))}
-        {/* {stands.map((item, idx) => {
-          const standTotal = item.hourly_sales.reduce(
-            (sum, sale) => sum + sale,
-            0
-          );
-          totals += standTotal;
-          return (
-            <tr key={item.name} className="even:bg-emerald-100 odd:bg-emerald-300">
-              <td className="pl-2 border border-gray-700">{item.location}</td>
-              {item.hourly_sales.map((item, idx) => (
-                <td key={idx} className="pl-2 border border-gray-700">
-                  {item}
-                </td>
-              ))}
-              <td className="pl-2 border border-gray-700">{standTotal}</td>
-            </tr>
-          );
-        })}
-        <td className="pl-2 border border-gray-700">Totals</td>
-        {hours.map((item, idx) => {
-          return (
-            <>
-              <td className="pl-2 border border-gray-700">
-                {stands.reduce((sum, sale) => sum + sale.hourly_sales[idx], 0)}
-              </td>
-            </>
-          );
-        })}
-        <td className="pl-2 border border-gray-700">{totals}</td> */}
       </tbody>
     </table>
   );
