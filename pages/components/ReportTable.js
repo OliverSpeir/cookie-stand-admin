@@ -8,14 +8,14 @@ export default function ReportTable({ stands, deleteStand }) {
       <thead>
         <tr>
           <th>Location</th>
-          {hours.map((item, idx) => (
+          {stands && hours.map((item, idx) => (
             <th key={idx}>{item}</th>
           ))}
           <th>Totals</th>
         </tr>
       </thead>
       <tbody>
-      {stands.map(stand => (
+      {stands && stands.map(stand => (
                     <TableRow key={stand.id} info={stand} deleteStand={deleteStand} />
                 ))}
       </tbody>
