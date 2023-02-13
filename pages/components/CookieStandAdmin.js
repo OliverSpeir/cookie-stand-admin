@@ -1,5 +1,5 @@
-import CookieStandTable from "./ReportTable";
-import CookieStandForm from "./CreateForm";
+import ReportTable from "./ReportTable";
+import CreateForm from "./CreateForm";
 import Footer from "./Footer";
 import useResource from '../../hooks/useResource';
 
@@ -9,8 +9,8 @@ export default function CookieStandAdmin() {
 
     return (
     <>
-            <CookieStandForm />
-            <CookieStandTable stands={resources || []} deleteStand={deleteResource} />
+            <CreateForm />
+            <ReportTable stands={resources || []} deleteStand={deleteResource} />
             <Footer locations={resources || []} />
    </>
     );

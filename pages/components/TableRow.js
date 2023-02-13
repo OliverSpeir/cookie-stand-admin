@@ -1,4 +1,4 @@
-export default function CookieStandRow({ info, deleteStand }) {
+export default function TableRow({ info, deleteStand }) {
 
     function clickHandler() {
         deleteStand(info.id);
