@@ -20,7 +20,7 @@ export default function Home() {
         <title>Cookie Stand Admin Page</title>
         <meta name="description" content="First NextJS Project" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       {/* {console.log(user)} */}
       <Header user={user} logout={logout}/>
