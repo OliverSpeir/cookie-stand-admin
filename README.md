@@ -1,6 +1,8 @@
 # LAB - 37, 38, 39 and 41 
 
 ## Project: Cookie Stand Admin Page
+- [Front end](https://cookie-stand-admin-livid.vercel.app/)
+- [api](https://cookie-stand-api-eta.vercel.app/)
 
 ### Author: Oliver Speir
 
@@ -9,8 +11,7 @@
 - Cookie Stand Admin Page
     - built from create-next-app --javascript
     - styled with tailwindCSS
-    - connected to django rest framework api
-    - uses jwt for authorization 
+    - connected to django rest framework api deployed on vercel
     - deployed on vercel
 
 ### Setup
