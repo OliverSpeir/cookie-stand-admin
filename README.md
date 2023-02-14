@@ -3,6 +3,7 @@
 ## Project: Cookie Stand Admin Page
 - [Front end](https://cookie-stand-admin-livid.vercel.app/)
 - [api](https://cookie-stand-api-eta.vercel.app/)
+- [api repo](https://github.com/OliverSpeir/cookie-stand-api)
 
 ### Author: Oliver Speir
 
